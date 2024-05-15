@@ -1,0 +1,1 @@
+c:\dev\Java\jdk17.0.1\bin\java  -jar C:\teach\java2\java-server\target\java-server-1.0-SNAPSHOT.jar

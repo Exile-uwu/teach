@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- 密码修改面板FXML配置文件 对应页面交互控制类 com.teach.javafx.controller.base.PasswordController -->
+
+<BorderPane opacity="0.5" prefHeight="716.0" prefWidth="1757.0" stylesheets="@css/person-style-class.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teach.javafx.controller.base.PasswordController">
+    <top>
+        <ImageView fx:id="imageView" fitHeight="182.0" fitWidth="1757.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+            <image>
+                <Image url="@../picture/jiaoxueguanli.png" />
+            </image>
+        </ImageView>
+    </top>
+    <left>
+        <VBox style="-fx-background-color:yellow;" />
+    </left>
+    <right>
+        <VBox style="-fx-background-color:yellow;" />
+    </right>
+    <center>
+    <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="644.0" spacing="20.0">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <GridPane>
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="604.6666666666666" minWidth="10.0" prefWidth="604.6666666666666" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="450.0" minWidth="0.0" prefWidth="0.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints maxHeight="500.0" minHeight="20.0" prefHeight="200.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="20.0" prefHeight="200.0" vgrow="SOMETIMES" />
+         <RowConstraints />
+               <RowConstraints minHeight="20.0" prefHeight="200.0" />
+     </rowConstraints>
+      <children>
+         <Label contentDisplay="TOP" prefHeight="40.0" prefWidth="485.0" text="教师端-功能介绍:" textFill="#661d1d" GridPane.rowIndex="0">
+                  <font>
+                     <Font size="24.0" />
+                  </font></Label>
+          <Label prefHeight="35.0" prefWidth="597.0" text="1.个人信息:个人画像;" textFill="#661e1e" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="24.0" />
+                  </font></Label>
+               <Label prefHeight="32.0" prefWidth="589.0" text="2.教务管理:课程中心;我教的课;成绩中心;" textFill="#661d1d" GridPane.rowIndex="3">
+                  <font>
+                     <Font size="24.0" />
+                  </font>
+               </Label>
+      </children>
+   </GridPane>
+</VBox>
+</center>
+</BorderPane>
