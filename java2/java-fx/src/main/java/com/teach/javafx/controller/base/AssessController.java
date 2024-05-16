@@ -84,7 +84,7 @@ public class AssessController extends ToolController{
         nameList = HttpRequestUtil.getDictionaryOptionItemList("XS");
 
         nameComboBox.getItems().addAll(nameList);
-
+             
         datePick.setConverter(new LocalDateStringConverter("yyyy-MM-dd"));
 
 
