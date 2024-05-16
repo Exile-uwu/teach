@@ -185,6 +185,7 @@ public class AssessTeacherController extends ToolController{
         else {
             MessageDialog.alertDialog(res.getMsg());
         }
+        initialize();
     }
     /**
      * 点击保存按钮，保存当前编辑的学生信息，如果是新添加的学生，后台添加学生
